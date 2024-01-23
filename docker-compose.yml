@@ -1,0 +1,12 @@
+version: '3'
+services:
+    pro-epargne-admin-ui:
+        container_name: pro-epargne-admin-ui
+        image: mchekini/pro-epargne-admin-ui:1.0
+        ports:
+            - "80:80"
+
+networks:
+    default:
+        external:
+            name: pro-epargne
